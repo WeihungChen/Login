@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="authorize.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<form class="loginform">
+				<h1 class="loginheader">
+					<img src="Img/LAT.png" width=36>
+					<span class="logintitle">&emsp;&emsp;&emsp;&ensp;Login</span>
+				</h1>
+				<div class="loginwrap">
+					<input class="inputform" id="Name" name="Name" type="text" placeholder="使用者帳號"><br>
+					<input class="inputform" id="Password" name="Password" type="password" placeholder="密碼"><br>
+					<input class="inputbutton" id="Submit" name="Submit" type="button" value="登入" onclick="SubmitGo()">&emsp;
+					<input class="inputbutton" id="Register" name="Register" type="button" value="註冊" onclick="RegisterGo()">
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
