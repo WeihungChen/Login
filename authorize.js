@@ -27,10 +27,14 @@ function SubmitGo()
         {
         	console.log("execution failed!!");
         },
-        success: function(data) {
+        success: function(data) 
+        {
         	if(data.Success)
-			console.log(data.Data);
-		else
-			console.log(data.Message); }
+        	{
+				console.log(data.Data);
+				window.location.href="mainPage.html";
+        	}
+			else
+				console.log(data.Message); }
 	});
 }
